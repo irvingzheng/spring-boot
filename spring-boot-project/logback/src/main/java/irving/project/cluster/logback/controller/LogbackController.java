@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LogbackController {
 	Logger log = LoggerFactory.getLogger(LogbackController.class);
 
+
 	@RequestMapping(value = "/hello",method = {RequestMethod.POST,RequestMethod.GET})
 	public String hello(){
 		log.debug("this is debug");
